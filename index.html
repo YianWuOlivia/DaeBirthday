@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Unlock 💙</title>
+  <link rel="stylesheet" href="css/login.css" />
+  <script src="js/login.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <section class="card">
+      <div class="badge"><span class="dot"></span> 客服电话：514-402-0223</div>
+
+      <h1>🥸身份认证🥸</h1>
+      <p class="sub">
+        请正确回答以下的问题
+        <span class="muted">📝</span>
+      </p>
+
+      <form class="form" id="gateForm" autocomplete="off" novalidate>
+        <div class="group">
+          <label for="q1">1) 请输入宁的英文名字</label>
+          <div class="field">
+            <span class="num">1</span>
+            <input id="q1" name="q1" placeholder="Hint: Olivia" />
+          </div>
+        </div>
+
+        <div class="group">
+          <label for="q2">2) 中文名字</label>
+          <div class="field">
+            <span class="num">2</span>
+            <input id="q2" name="q2" placeholder="Hint: 吴大鹅" />
+          </div>
+        </div>
+
+        <div class="group">
+          <label for="q3">3) 又称</label>
+          <div class="field">
+            <span class="num">3</span>
+            <input id="q3" name="q3" placeholder="Hint: 某三个字母" />
+          </div>
+        </div>
+
+        <div class="group">
+          <label for="q4">4) 又称</label>
+          <div class="field">
+            <span class="num">4</span>
+            <input id="q4" name="q4" placeholder="Hint: 小红书搜索关键字“潼”" />
+          </div>
+        </div>
+
+        <div class="row">
+          <button class="btn" type="submit">解锁 ✨</button>
+          <button class="btn secondary" type="button" id="clearBtn">清空 :M</button>
+        </div>
+
+        <div class="error" id="error" role="alert" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <aside class="side">
+      <div class="hint">
+        <h2>如非图片本人 请立刻退出 🏃</h2>
+        <div class="card">
+            <img src="assets/images/login.jpg" alt="loginImage" class="card-img" />
+        </div>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

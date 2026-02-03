@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Birthday 🎉</title>
+
+  <link rel="stylesheet" href="css/birthday.css" />
+
+  <!-- GSAP + Draggable for carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/Draggable.min.js"></script>
+
+  <!-- Your page JS -->
+  <script src="js/birthday.js" defer></script>
+</head>
+<body>
+  <canvas id="confetti"></canvas>
+
+  <main class="wrap">
+    <header class="top">
+      <div class="tiny" id="today"></div>
+      <button class="btn secondary" id="logoutBtn" type="button">Lock</button>
+    </header>
+
+    <section class="card">
+      <h1 class="title">20岁生日快乐 <span id="name">Friend</span>!!! 🎂</h1>
+
+      <p class="sub goose-line">
+        <span style="--i:0">🪿</span><span style="--i:1">🪿</span><span style="--i:2">🪿</span>
+        <span style="--i:3">🪿</span><span style="--i:4">🪿</span><span style="--i:5">🪿</span>
+        <span style="--i:6">🪿</span><span style="--i:7">🪿</span><span style="--i:8">🪿</span>
+        <span style="--i:9">🪿</span><span style="--i:10">🪿</span><span style="--i:11">🪿</span>
+        <span style="--i:12">🪿</span><span style="--i:13">🪿</span><span style="--i:14">🪿</span>
+        <span style="--i:15">🪿</span><span style="--i:16">🪿</span><span style="--i:17">🪿</span>
+        <span style="--i:18">🪿</span><span style="--i:19">🪿</span>
+      </p>
+
+      <audio id="gooseSound" src="assets/audio/birthday.mp3" preload="auto"></audio>
+
+      <p>宇宙无敌大鹅美貌check～</p>
+      <!-- 3D carousel -->
+      <section class="carousel3d" aria-label="Photo carousel">
+        <div class="carousel3d__container">
+          <div id="ring">
+            <div class="img"></div><div class="img"></div><div class="img"></div><div class="img"></div><div class="img"></div>
+            <div class="img"></div><div class="img"></div><div class="img"></div><div class="img"></div><div class="img"></div>
+          </div>
+        </div>
+
+        <div class="carousel3d__vignette"></div>
+        <div id="dragger" class="carousel3d__dragger" aria-hidden="true"></div>
+      </section>
+      <p>Keep mogginggg 💅🏻💅🏻💅🏻</p>
+    </section>
+    <br>
+    <div class="row">
+        <button class="btn" id="openBtn" type="button">一些鹅言鹅语🙂‍↔️</button>
+    </div>
+
+      <div class="reveal" id="reveal">
+        <p class="msg" id="msg"></p>
+
+        <div class="row">
+            <button class="btn secondary" id="videoBtn" type="button">开启皇冠交接仪式👑</button>
+        </div>
+
+        <br>
+
+        <div id="videoWrap" class="videoWrap">
+            <video id="birthdayVideo" controls preload="metadata" width="100%">
+            <source src="assets/video/bday.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+            </video>
+        </div>
+      </div>
+  </main>
+</body>
+</html>
